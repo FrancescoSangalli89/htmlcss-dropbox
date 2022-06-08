@@ -8,10 +8,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
 /* top header start */
 
 header {
@@ -54,6 +50,7 @@ header {
 
 .nav ul a {
     color: #000;
+    text-decoration: none;
 }
 
 .nav ul li {
@@ -118,11 +115,162 @@ header {
 
 /* hero section end */
 
+/* main start */
+
+main {
+    width: 65%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+main h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+main .billing-container {
+    margin-bottom: 40px;
+}
+
+main .billing {
+    margin-right:20px;
+    margin-bottom: 30px;
+}
+
+main .billing::before {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+
+main .billing.checked::before {
+    width: 7px;
+    height: 7px;
+    border: 5px solid #0161FF;
+}
+
+.sub-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 1100px;
+    min-height: 1100px;
+    margin-bottom: 50px;
+}
+
+.sub-card {
+    width: calc(100% / 3 - 20px);
+    height: 100%;
+    border: 1px solid #9c9c9c;
+}
+
+.sub-type {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.sub-perf {
+    padding: 20px;
+}
+
+.sub-perf h3 {
+    margin-bottom: 25px;
+}
+
+.sub-perf .price {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-perf .duration {
+    font-weight: 200;
+    margin-bottom: 55px;
+}
+
+.sub-perf ul {
+    list-style: none;
+    text-indent: -10px;
+    padding-left: 20px;
+}
+
+.sub-perf ul li {
+    margin-bottom: 25px;
+}
+
+.sub-perf ul li:last-child {
+    margin-bottom: 55px;
+}
+
+.sub-perf .sub-imm {
+    margin: 35px 0 45px 0;
+}
+
+.sub-perf hr {
+    width: 50px;
+    margin-bottom: 55px;
+}
+
+.sub-perf h4 {
+    margin-bottom: 40px;
+}
+
+.sub-perf .fa-check {
+    color: #0161FF;
+}
+
+.sub-perf .fa-users {
+    font-size: 13px;
+}
+
+.sub-contacts {
+    width: 100%;
+    border: 1px solid #9c9c9c;
+}
+
+.top-sub-contacts {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.btm-sub-contacts {
+    display: flex;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.btm-sub-contacts .left {
+    width: 60%;
+}
+
+.btm-sub-contacts .left h3 {
+    margin: 15px 0 20px 0;
+}
+
+.btm-sub-contacts .left h4 {
+    margin-bottom: 45px;
+}
+
+.btm-sub-contacts .right {
+    width: 40%;
+}
+
+.btm-sub-contacts .right .btn {
+    float: right;
+}
+
+/* main end */
 
 /* botton start  */
 
 .btn{
     padding: 5px 10px;
+    text-decoration: none;
 }
 
 .btn-blue {
@@ -130,4 +278,7 @@ header {
     background-color: #0161FF;
 }
 
+.btn.big {
+    padding: 10px 20px;
+}
 /* botton end  */
