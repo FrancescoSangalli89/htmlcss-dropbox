@@ -228,7 +228,7 @@ main .billing.checked::before {
     padding-left: 20px;
 }
 
-.sub-perf ul li {
+.sub-perf ul li, footer ul li {
     margin-bottom: 25px;
 }
 
@@ -410,6 +410,37 @@ main .billing.checked::before {
 /* faq section start */
 
 /* main end */
+
+/* footer start */
+
+footer {
+    margin-top: 150px;
+    padding-top: 110px;
+    color: #fff;
+    background-color: #000;
+    height: 570px;
+}
+
+footer .container {
+    height: 340px;
+}
+
+.cln {
+    width: 19%;
+    height: 100%;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer hr {
+    width: 120px;
+    margin: 80px 0 40px 0;
+}
+
+/* footer end */
 
 /* botton start  */
 
