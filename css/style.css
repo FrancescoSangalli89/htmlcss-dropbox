@@ -30,6 +30,10 @@ ul {
     list-style: none;
 }
 
+.bb {
+    border-bottom: 1px solid #9c9c9c;
+}
+
 .d-flex {
     display: flex;
 }
@@ -170,7 +174,6 @@ main {
 
 main h2 {
     font-size: 35px;
-    margin-bottom: 40px;
 }
 
 main .billing {
@@ -206,7 +209,6 @@ main .billing.checked::before {
 .sub-type {
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid #9c9c9c;
 }
 
 .sub-perf {
@@ -257,27 +259,14 @@ main .billing.checked::before {
 .top-sub-contacts {
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid #9c9c9c;
 }
 
 .btm-sub-contacts {
     padding: 20px;
 }
 
-.btm-sub-contacts .left {
-    width: 60%;
-}
-
 .btm-sub-contacts .left h3 {
     margin: 15px 0 20px 0;
-}
-
-.btm-sub-contacts .left h4 {
-    margin-bottom: 45px;
-}
-
-.btm-sub-contacts .right {
-    width: 40%;
 }
 
 .btm-sub-contacts .right .btn {
@@ -387,8 +376,38 @@ main .billing.checked::before {
     width: 105px;
     margin: 30px 0;
 }
-
 /* square section end */
+
+/* free trial section start */
+
+.free {
+    background-color: #B4D0E7;
+    height: 360px;
+    margin-bottom: 150px;
+}
+
+.btn-container {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* free trial section end */
+
+/* faq section start */
+
+.faq {
+    margin-top: 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.top-faq:hover .hide {
+    display: inline-block;
+}
+
+/* faq section start */
 
 /* main end */
 
@@ -397,6 +416,8 @@ main .billing.checked::before {
 .btn{
     padding: 5px 10px;
     text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
 .btn-blue {
@@ -406,6 +427,7 @@ main .billing.checked::before {
 
 .btn-white {
     color: #000;
+    background-color: #fff;
     border: 1px solid #9c9c9c;
 }
 
