@@ -32,6 +32,10 @@ ul {
     justify-content: space-between;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .w-40 {
     width: 40%;
 }
@@ -290,6 +294,14 @@ main .billing.checked::before {
 }
 
 /* partner section end */
+
+/* dropbox business start */
+
+.busn-card {
+    width: calc(100% / 3 - 20px);
+}
+
+/* dropbox business start */
 
 /* main end */
 
