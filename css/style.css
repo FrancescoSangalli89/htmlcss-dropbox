@@ -16,6 +16,16 @@ body {
     clear: both;
 }
 
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.container-small {
+    width: 65%;
+    margin: auto;
+}
+
 ul {
     list-style: none;
 }
@@ -116,16 +126,11 @@ header {
 
 /* hero section start */
 
-.hero-container {
-    height: 550px;
-    margin: auto;
-}
-
 .top-hero {
     height: 180px;
 }
 
-.hero-container h1 {
+.top-hero h1 {
     font-size: 60px;
 }
 
@@ -146,7 +151,7 @@ header {
 .bottom-hero .hero-text a i {
     color: #000;
     font-size: 40px;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 .bottom-hero .hero-img img {
@@ -160,8 +165,6 @@ header {
 /* subcription section start */
 
 main {
-    width: 65%;
-    margin: auto;
     padding-top: 100px;
 }
 
@@ -286,7 +289,7 @@ main .billing.checked::before {
 /* partner section start */
 
 .partner {
-    margin: 150px 0;
+    margin: 150px auto;
 }
 
 .p-text {
@@ -297,11 +300,95 @@ main .billing.checked::before {
 
 /* dropbox business start */
 
+.db-busn .cards {
+    margin-bottom: 200px;
+}
+
 .busn-card {
     width: calc(100% / 3 - 20px);
 }
 
-/* dropbox business start */
+.cli-info {
+    margin-bottom: 150px;
+}
+
+/* dropbox business end */
+
+/* square section start */
+
+.square-container {
+    display: flex;
+
+}
+
+.square {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square-small {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.square-small img {
+    filter: invert(100%);
+}
+
+.green {
+    background-color: #A2D39B;
+}
+
+.purple {
+    background-color: #62092B;
+}
+
+.cyan {
+    background-color: #0093CE;
+}
+
+.red {
+    background-color: #FF1D1C;
+}
+
+.dark-red {
+    background-color: #D50020;
+}
+
+.light-blue {
+    background-color: #B4D0E7;
+}
+
+.blue {
+    background-color: #0D2481;
+}
+
+.yellow {
+    background-color: #FFD830;
+}
+
+.big-square {
+    background-color: #F5F5F5;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.big-square img {
+    width: 50%;
+}
+
+.big-square hr {
+    width: 105px;
+    margin: 30px 0;
+}
+
+/* square section end */
 
 /* main end */
 
