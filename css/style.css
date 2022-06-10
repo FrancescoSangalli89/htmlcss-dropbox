@@ -10,6 +10,37 @@ body {
 
 /* common rules start */
 
+.btn{
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-blue:hover {
+    filter: drop-shadow(-6px 3px 3px #4c89eb);
+}
+
+.btn-white:hover {
+    filter: drop-shadow(-6px 3px 3px #9d9fa5);
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #0161FF;
+}
+
+.btn-white {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+}
+
+.btn.big {
+    padding: 10px 20px;
+}
+
 .clear-fix::after {
     content: '';
     display: table;
@@ -26,8 +57,16 @@ body {
     margin: auto;
 }
 
+h2 {
+    font-size: 35px;
+}
+
 ul {
     list-style: none;
+}
+
+ul a {
+    text-decoration: none;
 }
 
 .bb {
@@ -91,8 +130,6 @@ ul {
 /* top header start */
 
 header {
-    height: 600px;
-    padding-top: 100px;
     background-color: #B4D0E7;
 }
 
@@ -106,46 +143,43 @@ header {
 }
 
 #logo {
-    padding: 10px;
+    width: 100px;
+    vertical-align: middle;
 }
 
-.nav ul {
-    padding: 10px;
+nav ul li {
+    padding: 0px 15px;
+    line-height: 50px;
+    border-bottom: 2px solid #fff;
 }
 
-.nav ul a {
+nav ul .bbw:hover {
+    border-bottom: 2px solid #000;
+}
+
+nav ul a {
     color: #000;
-    text-decoration: none;
 }
 
-.nav ul li {
-    padding: 5px 15px;
-}
-
-.top-header-right .btn {
-    margin-right: 10px;
+nav .btn {
+    display: inline;
+    color: #fff;
 }
 
 /* top header end */
 
 /* hero section start */
-
-.top-hero {
-    height: 180px;
+.hero {
+    position: relative;
+    bottom: -80px;
 }
 
-.top-hero h1 {
+.hero h1 {
     font-size: 60px;
-}
-
-.bottom-hero {
-    height: 370px;
 }
 
 .bottom-hero .hero-text {
     width: 30%;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .bottom-hero .hero-text .btn {
@@ -154,12 +188,8 @@ header {
 
 .bottom-hero .hero-text a i {
     color: #000;
-    font-size: 40px;
-    margin-top: 25px;
-}
-
-.bottom-hero .hero-img img {
-    object-fit: contain;
+    margin-top: 40px;
+    display: inline-block;
 }
 
 /* hero section end */
@@ -169,11 +199,11 @@ header {
 /* subcription section start */
 
 main {
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
-main h2 {
-    font-size: 35px;
+#plans {
+    padding-top: 50px;
 }
 
 main .billing {
@@ -307,7 +337,6 @@ main .billing.checked::before {
 
 .square-container {
     display: flex;
-
 }
 
 .square {
@@ -326,40 +355,52 @@ main .billing.checked::before {
     padding: 40px;
 }
 
+.square-small:hover {
+    border: 16px solid rgba(0, 0, 0, 0.3);
+}
+
 .square-small img {
     filter: invert(100%);
 }
 
 .green {
     background-color: #A2D39B;
+    border: 16px solid #A2D39B;
 }
 
 .purple {
     background-color: #62092B;
+    border: 16px solid #62092B;
 }
 
 .cyan {
     background-color: #0093CE;
+    border: 16px solid #0093CE;
 }
 
 .red {
     background-color: #FF1D1C;
+    border: 16px solid #FF1D1C;
 }
 
 .dark-red {
     background-color: #D50020;
+    border: 16px solid #D50020;
 }
 
 .light-blue {
     background-color: #B4D0E7;
+    border: 16px solid #B4D0E7;
 }
 
 .blue {
     background-color: #0D2481;
+    border: 16px solid #0D2481;
 }
 
 .yellow {
     background-color: #FFD830;
+    border: 16px solid #FFD830;
 }
 
 .big-square {
@@ -403,8 +444,16 @@ main .billing.checked::before {
     display: none;
 }
 
+.fa-angle-down {
+    transition: all 0.2s;
+}
+
+.top-faq:hover .fa-angle-down {
+    transform: rotate(180deg);
+}
+
 .top-faq:hover .hide {
-    display: inline-block;
+    display: block;
 }
 
 /* faq section start */
@@ -431,7 +480,6 @@ footer .container {
 }
 
 footer ul li a {
-    text-decoration: none;
     color: #fff;
 }
 
@@ -441,28 +489,3 @@ footer hr {
 }
 
 /* footer end */
-
-/* botton start  */
-
-.btn{
-    padding: 5px 10px;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-}
-
-.btn-blue {
-    color: #fff;
-    background-color: #0161FF;
-}
-
-.btn-white {
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #9c9c9c;
-}
-
-.btn.big {
-    padding: 10px 20px;
-}
-/* botton end  */
