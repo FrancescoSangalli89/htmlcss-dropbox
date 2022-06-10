@@ -366,6 +366,7 @@ main .billing.checked::before {
 
 .square-container {
     display: flex;
+    position: relative;
 }
 
 .square {
@@ -388,13 +389,22 @@ main .billing.checked::before {
     border: 16px solid rgba(0, 0, 0, 0.3);
 }
 
-.square-small img {
+.square-small .imgw {
     filter: invert(100%);
 }
 
 .green {
     background-color: #A2D39B;
     border: 16px solid #A2D39B;
+}
+
+.main-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% / 3);
+    padding: 50px;
 }
 
 .green:hover .a {
@@ -406,9 +416,17 @@ main .billing.checked::before {
     border: 16px solid #62092B;
 }
 
+.purple:hover .b {
+    display: block;
+}
+
 .cyan {
     background-color: #0093CE;
     border: 16px solid #0093CE;
+}
+
+.cyan:hover .c {
+    display: block;
 }
 
 .red {
@@ -416,9 +434,17 @@ main .billing.checked::before {
     border: 16px solid #FF1D1C;
 }
 
+.red:hover .d {
+    display: block;
+}
+
 .dark-red {
     background-color: #D50020;
     border: 16px solid #D50020;
+}
+
+.dark-red:hover .e {
+    display: block;
 }
 
 .light-blue {
@@ -426,9 +452,17 @@ main .billing.checked::before {
     border: 16px solid #B4D0E7;
 }
 
+.light-blue:hover .f {
+    display: block;
+}
+
 .blue {
     background-color: #0D2481;
     border: 16px solid #0D2481;
+}
+
+.blue:hover .g {
+    display: block;
 }
 
 .yellow {
@@ -436,13 +470,16 @@ main .billing.checked::before {
     border: 16px solid #FFD830;
 }
 
+.yellow:hover .h {
+    display: block;
+}
+
 .big-square {
     background-color: #F5F5F5;
-    padding: 30px;
 }
 
 .main-text img {
-    width: 50%;
+    width: 200px;
 }
 
 .main-text hr {
