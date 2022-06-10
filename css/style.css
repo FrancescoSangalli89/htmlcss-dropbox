@@ -8,6 +8,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 60px;
+}
+
 /* common rules start */
 
 .btn{
@@ -38,7 +42,7 @@ body {
     border: 1px solid #9c9c9c;
 }
 
-.btn.big {
+.btn .big {
     padding: 10px 20px;
 }
 
@@ -153,7 +157,7 @@ header {
 }
 
 nav ul li {
-    padding: 0px 15px;
+    padding: 0 15px;
     line-height: 50px;
     border-bottom: 2px solid #fff;
 }
@@ -179,33 +183,35 @@ nav .btn {
     bottom: -80px;
 }
 
-.hero h1 {
-    font-size: 60px;
-}
-
 .bottom-hero .hero-text {
     width: 30%;
 }
 
 #arrow:hover {
-    animation: trill 0.2s linear infinite;
+    animation: trill 3s linear infinite;
+    position: relative;
 }
 
 @keyframes trill {
     0% {
-        transform: rotate(10deg) scale(1.1);
+        transform: rotate(5deg) scale(1.2);
+        top: 4px;
     }
     25% {
-        transform: rotate(-10deg) scale(0.9);
+        transform: rotate(-5deg) scale(0.8);
+        top: -4px;
     }
     50% {
-        transform: rotate(10deg) scale(1.1);
+        transform: rotate(5deg) scale(1.2);
+        top: 4px;
     }
     75% {
-        transform: rotate(-10deg) scale(0.9);
+        transform: rotate(-5deg) scale(0.8);
+        top: -4px;
     }
     100% {
-        transform: rotate(10deg) scale(1.1);
+        transform: rotate(5deg) scale(1.2);
+        top: 4px;
     }
 
 }
@@ -249,7 +255,7 @@ main .billing::before {
     vertical-align: middle;
 }
 
-main .billing.checked::before {
+main span.checked::before {
     width: 7px;
     height: 7px;
     border: 5px solid #0161FF;
@@ -479,7 +485,9 @@ main .billing.checked::before {
 }
 
 .main-text img {
-    width: 200px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
 .main-text hr {
