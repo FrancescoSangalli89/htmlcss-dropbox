@@ -182,6 +182,29 @@ nav .btn {
     width: 30%;
 }
 
+#arrow:hover {
+    animation: trill 0.2s linear infinite;
+}
+
+@keyframes trill {
+    0% {
+        transform: rotate(10deg) scale(1.1);
+    }
+    25% {
+        transform: rotate(-10deg) scale(0.9);
+    }
+    50% {
+        transform: rotate(10deg) scale(1.1);
+    }
+    75% {
+        transform: rotate(-10deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(10deg) scale(1.1);
+    }
+
+}
+
 .bottom-hero .hero-text .btn {
     margin: 20px 0;
 }
