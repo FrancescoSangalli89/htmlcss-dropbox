@@ -19,27 +19,32 @@ h1 {
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    transition: all 0.2s;
-}
-
-.btn-blue:hover {
-    filter: drop-shadow(-6px 3px 3px #4c89eb);
-}
-
-.btn-white:hover {
-    filter: drop-shadow(-6px 3px 3px #9d9fa5);
-    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s, filter 0.3s 0.2s;
 }
 
 .btn-blue {
     color: #fff;
     background-color: #0161FF;
+    border: 1px solid #0161FF;
+}
+
+.btn-blue:hover {
+    background-color: #ffffff;
+    color: #0161FF;
+    filter: drop-shadow(-3px 3px 1px #0161ff);
 }
 
 .btn-white {
     color: #000;
     background-color: #fff;
     border: 1px solid #9c9c9c;
+}
+
+.btn-white:hover {
+    background-color: #9c9c9c;
+    color: #fff;
+    filter: drop-shadow(-3px 3px 1px #9c9c9c);
+    border: 1px solid #fff;
 }
 
 .btn .big {
@@ -154,6 +159,11 @@ header {
 #logo {
     width: 100px;
     vertical-align: middle;
+    transition: all 2s;
+}
+
+#logo:hover {
+    transform: scale(1.1);
 }
 
 nav ul li {
@@ -399,11 +409,6 @@ main span.checked::before {
     filter: invert(100%);
 }
 
-.green {
-    background-color: #A2D39B;
-    border: 16px solid #A2D39B;
-}
-
 .main-text {
     position: absolute;
     left: 50%;
@@ -412,6 +417,12 @@ main span.checked::before {
     width: calc(100% / 3);
     padding: 50px;
 }
+
+.green {
+    background-color: #A2D39B;
+    border: 16px solid #A2D39B;
+}
+
 
 .green:hover .a {
     display: block;
